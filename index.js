@@ -1,7 +1,7 @@
 
 
 const DOMSelectors = {
-    title: document.querySelector("h1"),
+    form: document.querySelector("form"),
     subtitle: document.querySelector("h2"),
     card: document.querySelector(".card"),
 
