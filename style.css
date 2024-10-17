@@ -52,7 +52,7 @@ p{
 
 button{
     width: 7%;
-    margin: 1%;
+    margin-top: 1%;
     padding: 0.1%;
     font-size: 1vw;
     border: solid 0.15vw;
@@ -101,4 +101,14 @@ form{
     border: solid 0.5vw;
     border-radius: 1rem;
     border-color: black;
+}
+
+.textholder{
+    width: 75%;
+    height: 20%;
+    padding: 1%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
