@@ -50,8 +50,16 @@ p{
     font-size: 1vw;
 }
 
-button{
+.buttonC{
     width: 7%;
+    margin-top: 1%;
+    padding: 0.1%;
+    font-size: 1vw;
+    border: solid 0.15vw;
+}
+
+.buttonR{
+    width: 30%;
     margin-top: 1%;
     padding: 0.1%;
     font-size: 1vw;
@@ -82,12 +90,12 @@ form{
 }
 
 .card{
-    width: 21%;
-    height: 30vw;
+    width: 24%;
+    height: 35vw;
     margin: 2%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     border: solid 0.5vw;
     border-radius: 2rem;
@@ -95,12 +103,20 @@ form{
     background-image: linear-gradient(0deg, white, rgb(185, 0, 0));
 }
 
-.image{
+.imageholder{
     width: 70%;
-    height: 55%;
+    height: 45%;
     border: solid 0.5vw;
     border-radius: 1rem;
     border-color: black;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: hidden;
+    border-radius: 0.5rem;
 }
 
 .textholder{
