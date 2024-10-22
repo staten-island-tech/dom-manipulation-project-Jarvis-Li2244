@@ -5,31 +5,33 @@ const DOMSelectors = {
     inputN: document.querySelector(".inputN"),
     inputI: document.querySelector(".inputI"),
     inputD: document.querySelector(".inputD"),
-}
+};
 
-removeButton()
+removeButton();
 
 DOMSelectors.form.addEventListener("submit", function(event) {
     event.preventDefault();
     createButton();
     removeButton();
     event.target.reset();
-}
-)
+    }
+);
 
 function createButton() {
     let header = DOMSelectors.inputN.value;
     let image = DOMSelectors.inputI.value;
     let desc = DOMSelectors.inputD.value;
     addCard(header, image, desc);
-}
+};
 
 function removeButton() {
     let buttons = document.querySelectorAll(".buttonR")
     buttons.forEach(button => button.addEventListener("click", function(event) {
         event.target.parentElement.remove()
-    }))
-}
+    }
+    )
+    )
+};
 
 function addCard(header, image, desc) {
     DOMSelectors.container.insertAdjacentHTML(
@@ -45,4 +47,4 @@ function addCard(header, image, desc) {
             <button class="buttonR">Remove Card</button>
         </div>`
     )
-}
+};
